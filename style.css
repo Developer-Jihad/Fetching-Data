@@ -1,0 +1,42 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.singleCard {
+  background-color: aquamarine;
+  border-radius: 10px;
+  padding: 10px;
+  /* max-width: 250px; */
+}
+.btn {
+  background-color: rgb(245, 141, 141);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  #root {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 576px) {
+  #root {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
